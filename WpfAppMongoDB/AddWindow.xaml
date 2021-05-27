@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfAppMongoDB.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppMongoDB"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="450" Width="800">
+    <Grid ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="10,46,10,233" Grid.Column="0">
+            <Label Content="Диск"/>
+            <Label Content="Исполнитель"/>
+            <Label Content="Дата выпуска"/>
+            <Label Content="Стиль"/>
+            <Label Content="Издатель" />
+        </StackPanel>
+
+        <StackPanel   Margin="1,46,1,217" Width="264" Grid.Column="1">
+            <TextBox x:Name="Disk" Text="" Height="31"/>
+            <TextBox x:Name="Executor" Text="" Height="22"/>
+            <TextBox x:Name="Date" Text="" Height="32" Width="264"/>
+            <TextBox x:Name="Style" Text="" Height="26"/>
+            <TextBox x:Name="Creator" Text="" Height="26"/>
+        </StackPanel>
+
+
+
+        <Button x:Name="Add"  Content="Применить" Grid.Column="2" HorizontalAlignment="Left" Margin="24,268,0,0" VerticalAlignment="Top" Width="179" Height="47" Click="Add_Click"/>
+
+    </Grid>
+</Window>

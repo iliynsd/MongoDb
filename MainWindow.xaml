@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfAppMongoDB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppMongoDB"
+        mc:Ignorable="d"
+        Title="Музыкальная коллекция" Height="450" Width="700" >
+    <StackPanel Margin="104,35,133,33">
+        <Label Content="Выберите действия" FontSize="20" HorizontalContentAlignment="Center"/>
+        <Button x:Name="Button_Add" Content="Добавить" FontSize="20" HorizontalContentAlignment="Center" Click="Button_Add_Click"/>
+        <Button x:Name="Button_Change" Content="Редактировать" FontSize="20" HorizontalContentAlignment="Center" Click="Button_Change_Click"/>
+        <Button x:Name="Button_Search" Content="Найти" FontSize="20" HorizontalContentAlignment="Center" Click="Button_Search_Click"/>
+
+    </StackPanel>
+    
+
+
+
+
+
+
+
+
+
+
+</Window>
